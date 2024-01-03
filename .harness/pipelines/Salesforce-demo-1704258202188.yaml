@@ -51,6 +51,8 @@ pipeline:
                        ls -alrt
                       cd 'Salesforce-demo'
                       git branch
+                      git diff --diff-filter=ACMRT HEAD^ HEAD
+                      ls -alrt
           platform:
             os: Linux
             arch: Amd64
