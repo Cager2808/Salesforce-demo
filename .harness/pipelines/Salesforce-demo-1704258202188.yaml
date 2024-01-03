@@ -48,7 +48,7 @@ pipeline:
                     command: |2
                        git --version
                        git clone $https://github.com/Cager2808/Salesforce-demo
-                       ls -alrt
+                       ls -lart
           platform:
             os: Linux
             arch: Amd64
