@@ -47,7 +47,8 @@ pipeline:
                     shell: Bash
                     command: |2+
                        git --version
-                       git clone $https://github.com/Cager2808/Salesforce-demo
+                       git clone 'https://github.com/Cager2808/Salesforce-demo'
+                       ls -alrt
 
           platform:
             os: Linux
