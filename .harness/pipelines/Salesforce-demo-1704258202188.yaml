@@ -45,10 +45,10 @@ pipeline:
                   identifier: Git_Diff_Check
                   spec:
                     shell: Bash
-                    command: |2
+                    command: |2+
                        git --version
                        git clone $https://github.com/Cager2808/Salesforce-demo
-                       ls -lart
+
           platform:
             os: Linux
             arch: Amd64
