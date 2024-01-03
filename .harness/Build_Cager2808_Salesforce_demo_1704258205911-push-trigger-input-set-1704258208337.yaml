@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Cager2808_Salesforce_demo_1704258205911-push-trigger-input-set
+  identifier: Build_Cager2808_Salesforce_demo_1704258205911pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Salesforce__App
+  pipeline:
+    identifier: Build_Cager2808_Salesforce_demo_1704258205911
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
