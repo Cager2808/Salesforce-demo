@@ -45,14 +45,9 @@ pipeline:
                   identifier: Git_Diff_Check
                   spec:
                     shell: Bash
-                    command: |2-
+                    command: |2
                        git --version
                       ls -alrt
-                      cd $Salesforce-demo
-                      git branch
-                      git diff --diff-filter=ACMRT HEAD^ HEAD
-                      ls -alrt
-                      sgd --to HEAD --from HEAD^ --repo . --output .
           platform:
             os: Linux
             arch: Amd64
