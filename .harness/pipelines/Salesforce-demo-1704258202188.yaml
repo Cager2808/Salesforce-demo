@@ -53,6 +53,12 @@ pipeline:
                       git branch
                       git diff --diff-filter=ACMRT HEAD^ HEAD
                       ls -alrt
+                      sgd --to HEAD --from HEAD^ --repo . --output .
+                      ls -lart
+                      echo "package xml"
+                      cat package/package.xml
+                      echo "Display contents of Destructive changes xml"
+                      cat destructiveChanges/destructiveChanges.xml
           platform:
             os: Linux
             arch: Amd64
